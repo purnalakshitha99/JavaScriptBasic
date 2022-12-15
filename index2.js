@@ -222,4 +222,97 @@ switch(actor){
         console.log('inavalid');
 }
 
-     
+
+let grade;
+grade = 'guest';
+if (grade === 'guest'){
+    console.log('new grade');
+}
+
+ //for loop
+ 
+ for(let i = 10; i>= 0 ; i--){
+
+    if(i%2 == 0){
+        console.log('hello world'+i);
+    }
+   
+ }
+
+ //while loop 
+let s = 0;
+ while(s<=10){
+    if(s%2 !== 0){
+        console.log('even:'+s);
+        
+    }
+    s += 1;
+ }
+
+ //do while 
+ let n2 =10;
+ do{
+    if(n2 % 2 == 0){
+    console.log('even '+n2);
+    }
+    n2 =n2-1;
+    
+    
+   
+    }
+ while(n2<=10 && n2>=0);
+ 
+
+ //======forIn loop 
+
+ person = { colour:'red',age : 23};
+ 
+ for( let key in person){
+    //console.log(person['age']);
+    //console.log(person.age);
+    //console.log(k);
+    //console.log(person.colour);
+    //console.log(person['colour']);
+    console.log(key,person[key]);//colour 'red'  age 23
+    
+ }
+    
+
+ const color1 = ['red','green','blue'];
+ for(let index in color1){
+    //console.log(color1)//array ekama pennai
+    //console.log(index,color1[index])//index ekai value ekai dekama pennai
+    console.log(color1[index]);//value tika withark pennai
+ } 
+
+
+ //===============for-of loop
+const games = ['cricket','vollyball','carom'];
+for(let games1 of games){
+    console.log(games1)  //for in ekedi value print karapu eka meked 'of' yodagena karanwa ethakota kelinma value tika print karala denawa
+}
+
+
+//======break and continue
+
+// let num3 = 0;
+// while(num3<10){
+//     if(num3 == 5){
+//         break;
+//     }
+//     console.log('value: '+num3);
+//     num3 +=1;
+// }
+ 
+
+//continue
+ let num4 = 0;
+ while( num4 <= 10){
+    if( num4 % 2 !== 0){
+        num4 ++;
+        continue;
+    }
+    console.log('value is : '+num4);
+    num4 ++;
+ }
+ 
