@@ -265,17 +265,17 @@ let s = 0;
 
  //======forIn loop 
 
- person = { colour:'red',age : 23};
+//  person = { colour:'red',age : 23};
  
- for( let key in person){
-    //console.log(person['age']);
-    //console.log(person.age);
-    //console.log(k);
-    //console.log(person.colour);
-    //console.log(person['colour']);
-    console.log(key,person[key]);//colour 'red'  age 23
+//  for( let key in person){
+//     //console.log(person['age']);
+//     //console.log(person.age);
+//     //console.log(k);
+//     //console.log(person.colour);
+//     //console.log(person['colour']);
+//     console.log(key,person[key]);//colour 'red'  age 23
     
- }
+//  }
     
 
  const color1 = ['red','green','blue'];
@@ -295,24 +295,38 @@ for(let games1 of games){
 
 //======break and continue
 
-// let num3 = 0;
-// while(num3<10){
-//     if(num3 == 5){
-//         break;
-//     }
-//     console.log('value: '+num3);
-//     num3 +=1;
-// }
+let num3 = 0;
+while(num3<10){
+    if(num3 == 5){
+        break;
+    }
+    console.log('value: '+num3);
+    num3 +=1;
+}
  
 
 //continue
  let num4 = 0;
  while( num4 <= 10){
     if( num4 % 2 !== 0){
-        num4 ++;
+        num4 ++;//methanin num4 value eka gatta ayeth uda while ekata gihin enwa example ekk lesa 1 awa kiyamuko 1 if eken true wenwa mkd 1 deken beduwata passe ithiriya 0 ta samana wenne nane asamanayine ita passe num4 ekata ekak ekathu wela value eka 2 wenawa ita passe continue karanawa continue karaddi num4 = 1 atha arala num4 = 2 aragena uda while ekata gihin ethanin true wela if ekata eddi eken false wenwa mkd 2 deken bedaddi ithiriya 0 ni meke condition eke thyenne 0 ta asamana kiyalane ethakota if ekata enne na yata console log eken n4 = 2 print karala aye loop wnewa
         continue;
     }
     console.log('value is : '+num4);
     num4 ++;
  }
  
+
+
+
+ person = { colour:'red',age : 23};
+ 
+ for( let key in person){
+    //console.log(person['age']);
+    //console.log(person.age);
+    //console.log(k);
+    //console.log(person.colour);
+    //console.log(person['colour']);
+    console.log(person[key]);//colour 'red'  age 23
+    
+ }
