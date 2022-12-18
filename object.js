@@ -17,13 +17,15 @@ let y = 1;
 
 //next
 
-function createCircle(radius){
+function createCircle(width){
     return { 
         radius,
+        width,
         
         draw(){
             console.log('draw');
-        }
+        },
+        isVisible: true
     };
 }
 
@@ -35,4 +37,20 @@ circle1.draw();
 const circle2 = createCircle(2);
 console.log(circle2);
 console.log(circle2.draw);
+
+console.log(circle2.isVisible);
+
+
+
+
+//constructor function
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
+
+const circle = new Circle(1);
+
 
