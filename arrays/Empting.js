@@ -2,11 +2,11 @@ let number = [3,5,6,8];
 let another = number;
 
 //solution 1
-number = [];
+//number = [];
 
 
 //solution2
-//number.length = 0;
+//number.length = 0;  //best of this.
 
 
 //solution 3
