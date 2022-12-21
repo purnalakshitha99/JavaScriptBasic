@@ -16,7 +16,7 @@ function fizzBuzz(input){
             return 'Not a Number';
     }else{
         return input;
-    }
+    }//new
 }
 
 // const color1 = ['red','green','blue'];
